@@ -133,3 +133,9 @@ gradle-app.setting
 **/build/
 
 # End of https://www.gitignore.io/api/java,gradle,intellij+all
+
+.settings
+.vscode/launch.json
+.vscode/settings.json
+.classpath
+.project

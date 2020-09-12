@@ -2,6 +2,7 @@ plugins {
 	id 'org.springframework.boot' version '2.1.7.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.7.RELEASE'
 	id 'java'
+	id 'maven-publish'
 }
 
 group = 'be.ordina'
@@ -16,4 +17,9 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.springframework.security:spring-security-oauth2-resource-server'
+	implementation 'org.springframework.security:spring-security-oauth2-jose'
+ 	compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.13.3'
+  	compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.13.3'
 }
