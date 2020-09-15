@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 
 import java.util.List;
 
-//Only required when not using EnableWebSecurity
+//CrossOrigin it's only required when not using EnableWebSecurity
 //@CrossOrigin(origins ="*", maxAge=3600)
 @RestController
 @RequestMapping("/api/heroes")
